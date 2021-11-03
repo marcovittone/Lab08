@@ -35,7 +35,8 @@ public class FXMLController {
 
     @FXML
     void doAnalizzaAeroporti(ActionEvent event) {
-    	//TODO
+    	
+    	
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
