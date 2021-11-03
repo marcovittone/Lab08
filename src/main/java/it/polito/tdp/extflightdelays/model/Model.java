@@ -54,7 +54,7 @@ public class Model {
 		
 		for(DefaultWeightedEdge de: set)
 		{
-			if(this.grafo.getEdgeWeight(de) < minimo)
+			if(this.grafo.getEdgeWeight(de) <= minimo)
 				this.grafo.removeEdge(de);
 		}
 		
