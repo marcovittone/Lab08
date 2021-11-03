@@ -1,8 +1,10 @@
 package it.polito.tdp.extflightdelays.model;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
@@ -48,7 +50,9 @@ public class Model {
 				
 		}
 		
-		for(DefaultWeightedEdge de: this.grafo.edgeSet())
+		Set<DefaultWeightedEdge> set= new HashSet(this.grafo.edgeSet());
+		
+		for(DefaultWeightedEdge de: set)
 		{
 			if(this.grafo.getEdgeWeight(de) < minimo)
 				this.grafo.removeEdge(de);
